@@ -1,0 +1,158 @@
+:root {
+  --backgroud: #EFF1F3;
+  --highlight: #EFF1F3;
+  --text:#232020;
+  --upper-bar: #283044;
+  --white: #fff
+}
+
+@media(max-width: 1080px) {}
+    html {
+        font-size: 93.75%;
+    }
+
+@media(max-width: 720px) {}
+    html {
+        font-size: 87.5%;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+body, input, textarea, button {
+  font: 400 1rem 'Montserrat', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.barra-superior {
+  height: 100%;
+
+  background: var(--upper-bar);
+  color: var(--white);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 200%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:repeat(2, 250px);
+  grid-gap: 1rem;
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+.grid-container > div {
+  background-color: var(--highlight);
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.05);
+
+}
+
+.item1 {
+  grid-column: 1 / span 1;
+}
+
+.item1 label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item2 {
+  grid-column: 2 / span 1;
+}
+
+.item2 label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item3 {
+  grid-column: 1 / span 2;
+}
+
+.item3 label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item4 {
+  grid-column: 1 / span 2;
+}
+
+.item4 strong {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.item5 {
+  grid-column: 1 / span 2;
+}
+
+.item6 {
+  grid-column: 1 / span 2;
+}
+
+.item6 strong {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.item7 {
+  grid-column: 1 / span 2;
+}
+
+.item8 {
+  grid-column: 1 / span 2;
+}
+
+.button {
+  background-color: gray; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.2s;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+.button:hover {
+  background: #283044;
+}
+
