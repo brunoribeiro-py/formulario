@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="formulario.css" media="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <title>Cadastro</title>
+</head>
+
+<header class="barra-superior">
+  <div>
+    <strong>Cadastro de DEVs</strong>
+  </div>
+</header>
+
+<body>
+  <form>
+
+    <div class='grid-container'>
+
+      <div class='item1'>
+        <label for='nome'><strong>Nome</strong></label>
+        <input type="text" name='nome' id='nome' required>
+      </div>
+
+      <div class='item2'>
+        <label for='sobrenome'><strong>Sobrenome</strong></label>
+        <input type="text" name='sobrenome' id='sobrenome' required>
+      </div>
+
+      <div class="item3">
+        <label for='email'><strong>E-mail</strong></label>
+        <input type='email' name='email' id='email' required></input>
+      </div>
+
+      <div class="item4">
+        <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+        <label>
+          <input type="radio" name='devweb' value='frontend' checked> Frontend</label>
+        </label>
+        <label>
+          <input type="radio" name='devweb' value='backend'> Backend</label>
+        </label>
+        <label>
+          <input type="radio" name='devweb' value='fullstack'> Fullstack</label>
+        </label>
+      </div>
+
+      <div class="item5">
+        <label for="senioridade"><strong>Senioridade</strong></label>
+        <select id='senioridade'>
+          <option selected disabled value="">Selecione</option>
+          <option>Junior</option>
+          <option>Pleno</option>
+          <option>Senior</option>
+        </select>
+      </div>
+
+      <div class='item6'>
+        <label><strong>Selecione as tecnologias que você utiliza:</strong></label>
+        <input type="checkbox" id='tech1' name='tech1' value="HTML" />
+        <label for="tech1"></label>HTML</label>
+        <input type="checkbox" id='tech2' name='tech2' value="CSS" />
+        <label for="tech2"></label>CSS</label>
+        <input type="checkbox" id='tech3' name='tech3' value="JavaScript" />
+        <label for="tech3"></label>JavaScript</label>
+        <input type="checkbox" id='tech4' name='tech4' value="Python" />
+        <label for="tech4"></label>Python</label>
+        <input type="checkbox" id='tech5' name='tech5' value="Java" />
+        <label for="tech5"></label>Java</label>
+        <input type="checkbox" id='tech6' name='tech6' value="C#" />
+        <label for="tech6"></label>C#</label>
+      </div>
+
+      <div class="item7">
+        <label><strong>Conte um pouco da sua experiência:</strong></label>
+        <textarea name="experience" id="experience" rows="6" style="width: 26em;"></textarea>
+      </div>
+
+      <div class="item8">
+        <button type="submit" class="button">Concluído!</button>
+      </div>
+    </div>
+
+  </form>
+
+</body>
+
+</html>
