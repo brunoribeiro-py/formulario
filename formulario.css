@@ -1,11 +1,13 @@
+/*Definição das cores utilizadas*/
 :root {
   --backgroud: #EFF1F3;
-  --highlight: #EFF1F3;
+  --highlight: #EEF0F2;
   --text:#232020;
   --upper-bar: #283044;
   --white: #fff
 }
 
+/*Alteração de tamanho da fonte ao atingir determinada dimensão da tela*/
 @media(max-width: 1080px) {}
     html {
         font-size: 93.75%;
@@ -21,6 +23,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
   background: var(--background);
   color: var(--text);
@@ -53,6 +56,8 @@ button {
   font-size: 200%;
 }
 
+/*Estrutura dos módulos do grid. O parâmetro grid-template-columns(2, 250px)
+cria duas colunas de 250 pixels de largura com grid-gap de 1rem*/
 .grid-container {
   display: grid;
   grid-template-columns:repeat(2, 250px);
@@ -70,6 +75,11 @@ button {
 
 }
 
+/* Para cada item do grid, é possível escolher a largura e coluna
+utilizando o parametro grid-column. O primeiro número corresponde à
+coluna na qual o item estará posicionado, já o segundo corresponde
+a quantas colunas ele ocupa. O item 1, por exemplo, está posicionado
+na primeira coluna e tem largura de 1 coluna. */
 .item1 {
   grid-column: 1 / span 1;
 }
@@ -136,7 +146,7 @@ button {
 }
 
 .item8 {
-  grid-column: 1 / span 2;
+  text-align: center;
 }
 
 .button {

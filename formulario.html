@@ -11,6 +11,7 @@
   <title>Cadastro</title>
 </head>
 
+<!--Barra fixa superior com o título da página-->
 <header class="barra-superior">
   <div>
     <strong>Cadastro de DEVs</strong>
@@ -20,23 +21,29 @@
 <body>
   <form>
 
+    <!--div utilizada para fazer o template modular com grid-columns-->
     <div class='grid-container'>
 
+      <!--Para cada módulo do grid, temos uma div com a classe correspondente-->
+      <!--Item 1 corresponde ao Nome do Dev-->
       <div class='item1'>
         <label for='nome'><strong>Nome</strong></label>
         <input type="text" name='nome' id='nome' required>
       </div>
 
+      <!--Item 2: Sobrenome-->
       <div class='item2'>
         <label for='sobrenome'><strong>Sobrenome</strong></label>
         <input type="text" name='sobrenome' id='sobrenome' required>
       </div>
 
+      <!--Item 3: E-mail-->
       <div class="item3">
         <label for='email'><strong>E-mail</strong></label>
         <input type='email' name='email' id='email' required></input>
       </div>
 
+      <!--Item 4: Radio button para área de desenvolvimento (frontend, backend ou fullstack)-->
       <div class="item4">
         <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
         <label>
@@ -50,6 +57,7 @@
         </label>
       </div>
 
+      <!--Item 5: Dropdown para seleção de senioridade-->
       <div class="item5">
         <label for="senioridade"><strong>Senioridade</strong></label>
         <select id='senioridade'>
@@ -60,6 +68,7 @@
         </select>
       </div>
 
+      <!--Item 6: Checkbox para seleção das tecnologias usadas pelo Dev-->
       <div class='item6'>
         <label><strong>Selecione as tecnologias que você utiliza:</strong></label>
         <input type="checkbox" id='tech1' name='tech1' value="HTML" />
@@ -76,14 +85,18 @@
         <label for="tech6"></label>C#</label>
       </div>
 
+      <!--Item 7: caixa de texto para descrição da experiência do Dev-->
       <div class="item7">
         <label><strong>Conte um pouco da sua experiência:</strong></label>
         <textarea name="experience" id="experience" rows="6" style="width: 26em;"></textarea>
       </div>
 
-      <div class="item8">
-        <button type="submit" class="button">Concluído!</button>
-      </div>
+    </div>
+
+    <!--Item 8: botão para envio do formulário, porém esse item encontra-se fora do grid
+    para que seja possível nao ter a moldura e se alinhar ao centro da página-->
+    <div class="item8">
+      <button type="submit" class="button">Concluído!</button>
     </div>
 
   </form>
